@@ -1,0 +1,14 @@
+{
+    "browser": true,
+    "node": true,
+    "bitwise": true,
+    "curly": true,
+    "esnext": true,
+    "noarg": true,
+    "undef": true,
+    "unused": "vars",
+    "strict": true,
+    "predef": [
+        "fileName"
+    ]
+}

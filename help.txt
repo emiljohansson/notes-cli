@@ -1,0 +1,20 @@
+Available methods:
+
+- add(note)     adds a note to content.txt
+- remove(index) remove a note at index, use ls to find index
+- ls()          list all notes
+- help()        this information
+
+Usage:
+
+add:
+node notes add The note you want to add.
+
+remove:
+node notes remove 1
+
+ls:
+node notes ls
+
+help:
+node notes help

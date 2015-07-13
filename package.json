@@ -1,0 +1,14 @@
+{
+  "name": "notes",
+  "version": "0.0.0",
+  "description": "Add notes",
+  "main": "index.js",
+  "scripts": {},
+  "repository": "emiljohansson/notes",
+  "keywords": [
+    "note",
+    "notes"
+  ],
+  "author": "Emil Johansson <emiljohansson.se@gmail.com> (emiljohansson.se)",
+  "license": "MIT"
+}
