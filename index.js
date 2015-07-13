@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 "use strict";
 
 global.fileName = __dirname + '/notes.txt';

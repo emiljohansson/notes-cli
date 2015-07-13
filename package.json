@@ -11,5 +11,8 @@
     "cli"
   ],
   "author": "Emil Johansson <emiljohansson.se@gmail.com> (emiljohansson.se)",
-  "license": "MIT"
+  "license": "MIT",
+  "bin": {
+    "notes-cli": "index.js"
+  }
 }
