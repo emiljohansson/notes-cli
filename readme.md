@@ -21,7 +21,7 @@ notes-cli add My first note.
 
 notes-cli add My second note.
 
-notes-cli ls
+notes-cli list
 //=> [ { index: 0,
     date: 'Mon Jul 13 2015 10:02:48 GMT-0600 (MDT)',
     text: 'My first note.' },
@@ -31,7 +31,7 @@ notes-cli ls
 
 notes-cli update 0 Update my first note.
 
-notes-cli ls
+notes-cli list
 //=> [ { index: 0,
     date: 'Mon Jul 13 2015 10:04:19 GMT-0600 (MDT)',
     text: 'My second note.' },
@@ -41,7 +41,7 @@ notes-cli ls
 
 notes-cli remove 1.
 
-notes-cli ls
+notes-cli list
 //=> [ { index: 0,
     date: 'Mon Jul 13 2015 10:04:19 GMT-0600 (MDT)',
     text: 'My second note.' }]

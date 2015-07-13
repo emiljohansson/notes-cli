@@ -1,20 +1,24 @@
 Available methods:
 
 - add(note)     adds a note to content.txt
-- remove(index) remove a note at index, use ls to find index
-- ls()          list all notes
+- remove(index) remove a note at index, use list to find index
+- update(index) update a note at index, use list to find index
+- list()        list all notes
 - help()        this information
 
 Usage:
 
 add/a:
-node notes add The note you want to add.
+notes-cli add The note you want to add.
 
 remove/rm/r:
-node notes remove 1
+notes-cli remove 1
+
+update/u:
+notes-cli update 1 Update note at position 1
 
 list/ls:
-node notes ls
+notes-cli list
 
 help/h:
-node notes help
+notes-cli help
