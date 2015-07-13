@@ -3,9 +3,11 @@
 var addNote = require('./addnote');
 
 function addNotes(list) {
-    list.forEach(function(note) {
-        addNote(note.text, note.date);
-    });
+    list.forEach(iterateNote);
+}
+
+function iterateNote(note) {
+    addNote(note.text, note.date);
 }
 
 module.exports = addNotes;

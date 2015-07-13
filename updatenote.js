@@ -14,13 +14,17 @@ function updateNoteAt(index, newContent) {
         if (index >= list.length) {
             throw 'Note at index not found.';
         }
-        clearFileContent(fileName, function() {
-            list[index].date = new Date();
-            list[index].text = newContent;
-            moveToEnd(list, index);
-            addNotes(list);
-        });
+        updateList(list, index, newContent);
     };
+}
+
+function updateList(list, index, newContent) {
+    clearFileContent(fileName, function() {
+        list[index].date = new Date();
+        list[index].text = newContent;
+        moveToEnd(list, index);
+        addNotes(list);
+    });
 }
 
 module.exports = updateNote;

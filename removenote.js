@@ -13,11 +13,15 @@ function removeNoteAt(index) {
         if (index >= list.length) {
             throw 'Note at index not found.';
         }
-        clearFileContent(fileName, function() {
-            list.splice(index, 1);
-            addNotes(list);
-        });
+        updateList(list, index);
     };
+}
+
+function updateList(list, index) {
+    clearFileContent(fileName, function() {
+        list.splice(index, 1);
+        addNotes(list);
+    });
 }
 
 module.exports = removeNote;
