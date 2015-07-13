@@ -9,6 +9,7 @@ var removeNote = require('./removenote');
 var updateNote = require('./updatenote');
 var listNotes = require('./listnotes');
 var toJson = require('./tojson');
+var toText = require('./totext');
 var help = require('./help');
 
 switch (argv._.splice(0, 1).toString()) {
@@ -31,6 +32,9 @@ switch (argv._.splice(0, 1).toString()) {
         break;
     case 'json':
         toJson();
+        break;
+    case 'text':
+        toText();
         break;
     case 'help':
     case 'h':
