@@ -2,7 +2,7 @@
 
 var ls = require('./ls');
 
-function listNotes(callback) {
+function listNotes() {
     ls(printLn);
 }
 
