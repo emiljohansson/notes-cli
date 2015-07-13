@@ -6,7 +6,7 @@ var addNote = require('./addnote');
 function addNotes(list) {
     emptyFileContent(function() {
         list.forEach(function(note) {
-            addNote(note.note, note.date);
+            addNote(note.text, note.date);
         });
     });
 }
