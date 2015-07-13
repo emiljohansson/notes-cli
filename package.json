@@ -1,13 +1,14 @@
 {
-  "name": "notes",
+  "name": "notes-cli",
   "version": "1.0.0",
   "description": "Add notes",
   "main": "index.js",
   "scripts": {},
-  "repository": "emiljohansson/notes",
+  "repository": "emiljohansson/notes-cli",
   "keywords": [
     "note",
-    "notes"
+    "notes",
+    "cli"
   ],
   "author": "Emil Johansson <emiljohansson.se@gmail.com> (emiljohansson.se)",
   "license": "MIT"

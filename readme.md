@@ -1,4 +1,4 @@
-# notes
+# notes-cli
 
 > Command line based notes.
 
