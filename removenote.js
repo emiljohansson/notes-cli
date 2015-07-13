@@ -1,7 +1,8 @@
 "use strict";
 
-var ls = require('./ls');
 var addNotes = require('./addnotes');
+var clearFileContent = require('./clearfilecontent');
+var ls = require('./ls');
 
 function removeNote(index) {
     ls(removeNoteAt(index));
@@ -12,8 +13,10 @@ function removeNoteAt(index) {
         if (index >= list.length) {
             throw 'Note at index not found.';
         }
-        list.splice(index, 1);
-        addNotes(list);
+        clearFileContent(fileName, function() {
+            list.splice(index, 1);
+            addNotes(list);
+        });
     };
 }
 
