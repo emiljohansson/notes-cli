@@ -10,7 +10,6 @@ function updateNote(index, newContent) {
 }
 
 function updateNoteAt(index, newContent) {
-    console.log(index, newContent);
     return function(list) {
         if (index >= list.length) {
             throw 'Note at index not found.';
