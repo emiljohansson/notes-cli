@@ -4,16 +4,34 @@
 
 Add, remove and list notes.
 
+## Install
+
+```
+git clone https://github.com/emiljohansson/notes-cli
+
+cd /path/to/notes-cli
+
+npm link
+```
+
 ## Usage
 
 ```
-node notes add My first note.
+notes-cli add My first note.
 
-node notes remove 1.
+notes-cli add My second note.
 
-node notes ls
+notes-cli ls
+//=> [ { index: 0,
+    date: 'Mon Jul 13 2015 10:02:48 GMT-0600 (MDT)',
+    text: 'My first note.' },
+  { index: 1,
+    date: 'Mon Jul 13 2015 10:04:19 GMT-0600 (MDT)',
+    text: 'My second note.' }]
 
-node notes help
+notes-cli remove 1.
+
+notes-cli help
 ```
 
 ## License
