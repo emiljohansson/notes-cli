@@ -2,7 +2,7 @@
 
 > Command line based notes.
 
-Add, remove and list notes.
+Add, remove, update and list notes.
 
 ## Install
 
@@ -29,7 +29,22 @@ notes-cli ls
     date: 'Mon Jul 13 2015 10:04:19 GMT-0600 (MDT)',
     text: 'My second note.' }]
 
+notes-cli update 0 Update my first note.
+
+notes-cli ls
+//=> [ { index: 0,
+    date: 'Mon Jul 13 2015 10:04:19 GMT-0600 (MDT)',
+    text: 'My second note.' },
+  { index: 1,
+    date: 'Mon Jul 13 2015 10:04:48 GMT-0600 (MDT)',
+    text: 'Update my first note.' }]
+
 notes-cli remove 1.
+
+notes-cli ls
+//=> [ { index: 0,
+    date: 'Mon Jul 13 2015 10:04:19 GMT-0600 (MDT)',
+    text: 'My second note.' }]
 
 notes-cli help
 ```
