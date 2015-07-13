@@ -7,14 +7,14 @@ Available methods:
 
 Usage:
 
-add:
+add/a:
 node notes add The note you want to add.
 
-remove:
+remove/rm/r:
 node notes remove 1
 
-ls:
+list/ls:
 node notes ls
 
-help:
+help/h:
 node notes help

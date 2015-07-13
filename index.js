@@ -11,15 +11,20 @@ var help = require('./help');
 
 switch (argv._.splice(0, 1).toString()) {
     case 'add':
+    case 'a':
         addNote(argv._.join(' '));
         break;
     case 'remove':
+    case 'rm':
+    case 'r':
         removeNote(argv._[0]);
         break;
+    case 'list':
     case 'ls':
         listNotes();
         break;
     case 'help':
+    case 'h':
         help();
         break;
 }
